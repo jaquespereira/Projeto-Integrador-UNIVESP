@@ -85,12 +85,11 @@ h2 {
 .formulario {
     font-size: 22px;
     margin-left: 110px ;
-
 }
 
 .formulario-pt2 {
     margin-left: 360px;
-    font-size: 22 px;
+    font-size: 22px;
     margin-top: 40px;
 }
 
@@ -99,3 +98,12 @@ h2 {
     font-size: 30px;
 }
 
+.inseriM {
+    border-radius: 10px;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.rodape-pagina {
+    font-size: 20px;
+}
