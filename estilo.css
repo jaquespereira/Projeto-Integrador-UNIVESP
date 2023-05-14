@@ -75,7 +75,7 @@ h2, h3 {
 
 h2 {
     margin-top: 50px;
-    color: orangered;
+    color: rgb(236, 138, 102);
 }
 
 .voltar {
@@ -106,4 +106,20 @@ h2 {
 
 .rodape-pagina {
     font-size: 20px;
+}
+
+.info-adicional {
+    font-size: 10px;
+    margin-left: 250px;
+    margin-top: 60px ;
+}
+
+.info-adicional-1 {
+    font-size: 14px;
+}
+
+.tabela-geral {
+    margin-right: 110px;
+    margin-left: 110px;
+    margin-top: 30px;
 }
