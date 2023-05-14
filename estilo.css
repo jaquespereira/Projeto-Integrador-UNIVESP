@@ -1,4 +1,4 @@
-body {
+.body_inicial {
     background-image: url(calc.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,4 +21,63 @@ button {
     background-color: yellow;
     font-size: 32px;
     margin-left: 220px ;
+}
+
+ /* PAGINA_2  */
+
+body {
+    background-image: url(cor_azul.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-group {
+    margin-top: 150px;
+}
+
+
+.colunaPrincipal {
+    margin-left: 110px;
+}
+
+.menu-inicial {
+    margin-top: 30px;
+    font-size: 4px;
+    margin-left: 50px;
+}
+
+.cartao {
+    font-size: 19px;
+}
+
+.cartao-top {
+    font-size: 18px;
+    text-align: center;
+}
+
+.plataforma {
+    margin-top: 26px;
+    color:yellow;
+    font-size: 35px;
+}
+
+.linkar {
+    text-align: center;
+    font-size: 20px;
+
+}
+
+h2, h3 {
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 110px ;
+}
+
+h2 {
+    margin-top: 50px;
+    color: orangered;
+}
+
+.voltar {
+    margin-left: 110px;
 }
