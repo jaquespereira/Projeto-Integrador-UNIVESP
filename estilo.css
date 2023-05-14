@@ -81,3 +81,21 @@ h2 {
 .voltar {
     margin-left: 110px;
 }
+
+.formulario {
+    font-size: 22px;
+    margin-left: 110px ;
+
+}
+
+.formulario-pt2 {
+    margin-left: 360px;
+    font-size: 22 px;
+    margin-top: 40px;
+}
+
+.inseri {
+    border-radius: 10px;
+    font-size: 30px;
+}
+
