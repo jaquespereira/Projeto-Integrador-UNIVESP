@@ -1,0 +1,125 @@
+.body_inicial {
+    background-image: url(calc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: yellow;
+    text-align: justify;
+    margin-top: 50px;
+    font-size: 70px;
+    margin-left: 110px ;
+}
+
+p {
+    font-size: 32px;
+    margin-left:110px ;
+}
+
+button {
+    background-color: yellow;
+    font-size: 32px;
+    margin-left: 220px ;
+}
+
+ /* PAGINA_2  */
+
+body {
+    background-image: url(cor_azul.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-group {
+    margin-top: 150px;
+}
+
+
+.colunaPrincipal {
+    margin-left: 110px;
+}
+
+.menu-inicial {
+    margin-top: 30px;
+    font-size: 4px;
+    margin-left: 50px;
+}
+
+.cartao {
+    font-size: 19px;
+}
+
+.cartao-top {
+    font-size: 18px;
+    text-align: center;
+}
+
+.plataforma {
+    margin-top: 26px;
+    color:yellow;
+    font-size: 35px;
+}
+
+.linkar {
+    text-align: center;
+    font-size: 20px;
+
+}
+
+h2, h3 {
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 110px ;
+}
+
+h2 {
+    margin-top: 50px;
+    color: rgb(236, 138, 102);
+}
+
+.voltar {
+    margin-left: 110px;
+}
+
+.formulario {
+    font-size: 22px;
+    margin-left: 110px ;
+}
+
+.formulario-pt2 {
+    margin-left: 360px;
+    font-size: 22px;
+    margin-top: 40px;
+}
+
+.inseri {
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.inseriM {
+    border-radius: 10px;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.rodape-pagina {
+    font-size: 20px;
+}
+
+.info-adicional {
+    font-size: 10px;
+    margin-left: 250px;
+    margin-top: 60px ;
+}
+
+.info-adicional-1 {
+    font-size: 14px;
+}
+
+.tabela-geral {
+    margin-right: 110px;
+    margin-left: 110px;
+    margin-top: 30px;
+}
