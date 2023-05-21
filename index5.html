@@ -11,59 +11,119 @@
 </head>
     <body>
         <div class = "flex-container">
-            <h1>Calculadora de Investimentos</h1>
-
-            <div class="d-flex flex-row mb-3">
-                <div class="p-2">
-                    <div class="formulario">
-        
-                    <label for="User">Opções de Investimento</label><br>
-                    <input type="text" id="User" name="Name" class="inseri"/>
-                <br>
-                <br>
-                    <label for="User">Investimento Inicial</label><br>
-                    <input type="text" id="User" name="Name" class="inseri"/>
-                <br>
-                <br>
-                    <label for="User">Investimento Mensal</label><br>
-                    <input type="text" id="User" name="Name" class="inseri"/>
-                <br>
-                <br>
-                    <label for="User">Prazo</label><br>
-                    <input type="text" id="User" name="Name" class="inseri"/>
-            </div>
+            <h1>Conheça Mais</h1>
+                <div class="tabela-geral" >
+                    <table class="table table-striped bg-body-secondary">
+                        <thead>
+                            <tr>
+                            <th scope="col">Produtos de renda fixa</th>
+                            <th scope="col">Tipos de título</th>
+                            <th scope="col">Imposto de Renda</th>
+                            <th scope="col">Emissor</th>
+                            <th scope="col">Destino</th>
+                            <th scope="col">Garantia</th>
+                            <th scope="col">Tipos de Rentabilidade</th>
+                            <th scope="col">Indicador</th>
+                            <th scope="col">Tipo de Liquidez</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Tesouro Direto Selic</th>
+                                    <td>Público</td>
+                                    <td>SIM</td>
+                                    <td>Governo Federal</td>
+                                    <td>Financiar a dívida pública</td>
+                                    <td>Garantia do Governo Federal</td>
+                                    <td>Selic + valor pré-fixado (Híbrido)</td>
+                                    <td>SELIC</td>
+                                    <td>Alta/Diária/Imediata</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tesouro Direto Prefixado</th>
+                                    <td>Público</td>
+                                    <td>SIM</td>
+                                    <td>Governo Federal</td>
+                                    <td>Financiar a dívida pública</td>
+                                    <td>Garantia do Governo Federal</td>
+                                    <td>Pré-fixado</td>
+                                    <td>Taxa pré definida pelo Tesouro</td>
+                                    <td>Alta/Diária/Imediata</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tesouro Direto IPCA+</th>
+                                    <td>Público</td>
+                                    <td>SIM</td>
+                                    <td>Governo Federal</td>
+                                    <td>Financiar a dívida pública</td>
+                                    <td>Garantia do Governo Federal</td>
+                                    <td>IPCA + valor pré-fixado</td>
+                                    <td>IPCA</td>
+                                    <td>Alta/Diária/Imediata</td>
+                            </tr>
+                            <tr>
+                                    <th scope="row">  <a class="referencia-nova"href="index6.html"> CDB (Certificado de Depósito Bancário)  </a></th>
+                                    <td>Privado</td>
+                                    <td>SIM</td>
+                                    <td>Bancos</td>
+                                    <td>Financiar as atividades do banco</td>
+                                    <td>Garantia do FGC* até R$250 mil por CPF por instituição</td>
+                                    <td>Pré-Fixado; Pós-fixado; Híbrido</td>
+                                    <td>CDI, IPCA</td>
+                                    <td>Depende do título (Diária ou no vencimento)</td> </a>
+                            </tr>
+                            <tr>
+                                <th scope="row">LCI (Letra de Crédito Imobiliário)</th>
+                                    <td>Privado</td>
+                                    <td>ISENTO</td>
+                                    <td>Instituições financeiras</td>
+                                    <td>Financiar o setor imobiliário</td>
+                                    <td>Garantia do Fundo Garantidor de Crédito (FGC)*</td>
+                                    <td>Pré-Fixado; Pós-fixado; Híbrido</td>
+                                    <td>CDI, IPCA</td>
+                                    <td>Depende do título (Diária ou no vencimento) - Carência de 90 dias</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">LCA (Letra de Crédito do Agronegócio)</th>
+                                    <td>Privado</td>
+                                    <td>ISENTO</td>
+                                    <td>Instituições financeiras</td>
+                                    <td>Financiar o setor agrícola</td>
+                                    <td>Garantia do Fundo Garantidor de Crédito (FGC)*</td>
+                                    <td>Pré-Fixado; Pós-fixado; Híbrido</td>
+                                    <td>CDI, IPCA</td>
+                                    <td>Depende do título (Diária ou no vencimento) - Carência de 90 dias</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Debêntures</th>
+                                    <td>Privado</td>
+                                    <td>ISENTO</td>
+                                    <td>Empresas públicas eprivadas</td>
+                                    <td>Financiar as atividades da empresa</td>
+                                    <td>Sem garantia, mas pode ter preferência no caso de falência</td>
+                                    <td>Pré-Fixado; Pós-fixado; Híbrido</td>
+                                    <td>CDI, IPCA</td>
+                                    <td>Depende do título (Diária ou no vencimento) - Carência de 90 dias</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Fundos de renda fixa</th>
+                                    <td>Privado</td>
+                                    <td>SIM</td>
+                                    <td>Instituições financeiras</td>
+                                    <td>Diversificação em diferentes produtos de renda fixa</td>
+                                    <td>Não tem garantia do FGC</td>
+                                    <td>Diversificação em diferentes produtos de renda fixa</td>
+                                    <td>SELIC, IPCA, CDI e etc</td>
+                                    <td>Depende do prazo de cotização e liquidação do fundo</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div class="p-2">
-                    <div class="formulario-pt2">
-                        <label for="User">Rentabilidade Liquida </label><br>
-                        <input type="text" id="User" name="Name" class="inseri"/>
-                    <br>
-                    <br>
-                        <label for="User">Valor Total Investido </label>
-                        <input type="text" id="User" name="Name" class="inseriM"/>
-                    <br>
-                    <br>
-                        <label for="User">Rendimento Poupança</label>
-                        <input type="text" id="User" name="Name" class="inseri"/>
-                    </div>
-                    <div class="info-adicional">
-                        <p class="info-adicional-1"> Os valores podem alterar conforme varicação no mercado</p>
-                        <p class="info-adicional-1">-Data da última atualização 14/05/2023</p>
-                    </div>
-                    
+                  <br>
+                  <a href="index5.html"><button class="voltar">Voltar</button></a>
+                  <!-- <a href="index11.html"><button class="conhecer-mais-parte-dois">Feedback</button></a> -->
                 </div>
-            </div>
-        </div>
-        <div class="d-flex flex-row mb-3">
-            <div class="p-2"><p class="rodape-pagina"> Precisa de mais informações para escolher a melhor opçao de
-                renda fixa para você ? <br> Venha conhecer um pouco mais sobre os investimentos de Renda Fixa  </p></div>
-            <div class="p-2"><a href="index8.html"><button class="conhecer-mais bg-success-subtle text-emphasis-success">Saiba Mais</button></a></div>
-
-        <p> 
-         
-          
-        </p> 
+               </a></div>
         <script scr = "main.js"></script>
     </body>
 </html>

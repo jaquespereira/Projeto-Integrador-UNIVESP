@@ -195,3 +195,19 @@ h2 {
     margin-left: 10px;
     font-size:30px;
 }
+
+.calculo {
+    margin-left: 0px;
+    border-radius: 10px;
+    font-size: 26px;
+} 
+
+.referencia-nova {
+    text-decoration: none;
+    color:black;
+}
+
+.cdb-102{
+    color: whitesmoke;
+
+}
