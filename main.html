@@ -1,0 +1,40 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Renda Fixa</title>
+</head>
+<body>
+  <h1>Calculadora de Renda Fixa</h1>
+  <label for="investimentoInicial">Investimento Inicial:</label>
+  <input type="number" id="investimentoInicial" placeholder="Investimento Inicial">
+  <br>
+  <label for="investimentoMensal">Investimento Mensal:</label>
+  <input type="number" id="investimentoMensal" placeholder="Investimento Mensal">
+  <br>
+  <label for="tempoInvestimento">Tempo de Investimento (meses):</label>
+  <input type="number" id="tempoInvestimento" placeholder="Tempo de Investimento">
+  <br>
+  <button onclick="calcularRendaFixa()">Calcular</button>
+  <p id="resultado"></p>
+
+  <script>
+    function calcularRendaFixa() {
+      const investimentoInicial = parseFloat(document.getElementById('investimentoInicial').value);
+      const investimentoMensal = parseFloat(document.getElementById('investimentoMensal').value);
+      const taxaJurosMensal = parseFloat(document.getElementById('taxaJurosMensal').value) / 100;
+      const tempoInvestimento = parseInt(document.getElementById('tempoInvestimento').value);
+
+      let montanteAcumulado = investimentoInicial;
+      for (let i = 1; i <= tempoInvestimento; i++) {
+        montanteAcumulado += investimentoMensal;
+        montanteAcumulado *= (1 + taxaJurosMensal);
+      }
+
+      document.getElementById('resultado').textContent = `O montante acumulado após ${tempoInvestimento} meses é: R$ ${montanteAcumulado.toFixed(2)}`;
+    }
+  </script>
+</body>
+</html>
