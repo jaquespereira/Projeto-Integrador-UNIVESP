@@ -9,11 +9,12 @@ Abrir o navegador
     Maximize Browser Window
 
 Fechar o navegador
+    Capture Page Screenshot
     Close Browser
 
 
 Dado que usuario entrar na pagina inicial
-    Go To    url=http://127.0.0.1:5500/Projeto-Integrador-UNIVESP/index.html
+    Go To    url=file:///C:/Users/maria/OneDrive/%C3%81rea%20de%20Trabalho/Projeto-Integrador-UNIVESP/index.html
     Wait Until Element Contains    //button[contains(.,'Vamos começar !')]    Vamos começar
 
 Entao clicar no botao Vamos começar 
@@ -36,19 +37,14 @@ Entao Clicar Conheça mais sobre os investimentos e simule aqui Marca
     Click Element                    //div[@class='linkar text-body-secondary'][contains(.,'Conheça mais sobre os investimentos e simule aqui!')]
     Wait Until Element Is Visible    //h1[contains(.,'Conheça Mais')]
 
-
 Dado que usuario esta na pagina de investimentos 
-    Wait Until Element Is Visible    //h1[contains(.,'Conheça Mais')]
-
-Entao clicar CBD liquidez diaria 
-    Click Element    //h5[@class='card-title'][contains(.,'CBD Liquidez Diária  -Aplicação minima: 100,00  -Vencimento: 1 dia depois -Liquidez: 104% do CDI')]
-    Wait Until Element Is Visible    //h1[contains(.,'Calculadora de Investimentos')]
+    Go To    url=file:///C:/Users/maria/OneDrive/%C3%81rea%20de%20Trabalho/Projeto-Integrador-UNIVESP/index7.html
 
 Entao preencher os valores e calcular
     Input Text        //input[contains(@name,'Investimento Inicial')]           1000
     Input Text        //input[contains(@name,'Investimento Mensal(aporte)')]    100
     Input Text        //input[contains(@name,'Prazo(Meses)')]                   12
-    Click Element     //button[@class='calculo'][contains(.,'Calcular')]
+    Click Element     //button[@onclick='calcularRendaFixa()'][contains(.,'Calcular REVER')]
     
 
 

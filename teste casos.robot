@@ -16,6 +16,5 @@ Caso 01 - Navegar a pagina inicial
 
 Caso 02 - Investir 
     Dado que usuario esta na pagina de investimentos 
-    Entao clicar CBD liquidez diaria 
     Entao preencher os valores e calcular
     
