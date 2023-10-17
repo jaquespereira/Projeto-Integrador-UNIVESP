@@ -1,174 +1,174 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20231013 21:26:33.385" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20231015 20:42:32.975" rpa="false" schemaversion="3">
 <suite id="s1" name="Teste Casos" source="C:\Users\maria\OneDrive\Área de Trabalho\Projeto-Integrador-UNIVESP\teste casos.robot">
 <test id="s1-t1" name="Caso 01 - Navegar a pagina inicial" line="9">
 <kw name="Abrir o navegador" library="teste_resource" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231013 21:26:33.759" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20231013 21:26:33.758" endtime="20231013 21:26:38.859"/>
+<msg timestamp="20231015 20:42:36.832" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20231015 20:42:36.831" endtime="20231015 20:42:51.738"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231013 21:26:38.859" endtime="20231013 21:26:39.008"/>
+<status status="PASS" starttime="20231015 20:42:51.738" endtime="20231015 20:42:51.948"/>
 </kw>
-<status status="PASS" starttime="20231013 21:26:33.758" endtime="20231013 21:26:39.009"/>
+<status status="PASS" starttime="20231015 20:42:36.831" endtime="20231015 20:42:51.949"/>
 </kw>
 <kw name="Dado que usuario entrar na pagina inicial" library="teste_resource">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>url=file:///C:/Users/maria/OneDrive/%C3%81rea%20de%20Trabalho/Projeto-Integrador-UNIVESP/index.html</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231013 21:26:39.010" level="INFO">Opening url 'file:///C:/Users/maria/OneDrive/%C3%81rea%20de%20Trabalho/Projeto-Integrador-UNIVESP/index.html'</msg>
-<status status="PASS" starttime="20231013 21:26:39.010" endtime="20231013 21:26:39.705"/>
+<msg timestamp="20231015 20:42:51.968" level="INFO">Opening url 'file:///C:/Users/maria/OneDrive/%C3%81rea%20de%20Trabalho/Projeto-Integrador-UNIVESP/index.html'</msg>
+<status status="PASS" starttime="20231015 20:42:51.967" endtime="20231015 20:42:52.994"/>
 </kw>
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
 <arg>//button[contains(.,'Vamos começar !')]</arg>
 <arg>Vamos começar</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" starttime="20231013 21:26:39.706" endtime="20231013 21:26:40.088"/>
+<status status="PASS" starttime="20231015 20:42:52.994" endtime="20231015 20:42:53.338"/>
 </kw>
-<status status="PASS" starttime="20231013 21:26:39.010" endtime="20231013 21:26:40.088"/>
+<status status="PASS" starttime="20231015 20:42:51.966" endtime="20231015 20:42:53.339"/>
 </kw>
 <kw name="Entao clicar no botao Vamos começar" library="teste_resource">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[contains(.,'Vamos começar !')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231013 21:26:40.092" level="INFO">Clicking element '//button[contains(.,'Vamos começar !')]'.</msg>
-<status status="PASS" starttime="20231013 21:26:40.091" endtime="20231013 21:26:40.548"/>
+<msg timestamp="20231015 20:42:53.341" level="INFO">Clicking element '//button[contains(.,'Vamos começar !')]'.</msg>
+<status status="PASS" starttime="20231015 20:42:53.340" endtime="20231015 20:42:54.502"/>
 </kw>
-<status status="PASS" starttime="20231013 21:26:40.090" endtime="20231013 21:26:40.549"/>
+<status status="PASS" starttime="20231015 20:42:53.340" endtime="20231015 20:42:54.503"/>
 </kw>
 <kw name="Quando chegar na pagina o que voce encontra nessa plataforma, usuario explorara as paginas" library="teste_resource">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//p[@class='plataforma'][contains(.,'O que você encontra nessa plataforma')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231013 21:26:40.554" endtime="20231013 21:26:40.719"/>
+<status status="PASS" starttime="20231015 20:42:54.529" endtime="20231015 20:42:56.788"/>
 </kw>
-<status status="PASS" starttime="20231013 21:26:40.553" endtime="20231013 21:26:40.720"/>
+<status status="PASS" starttime="20231015 20:42:54.528" endtime="20231015 20:42:56.789"/>
 </kw>
 <kw name="Entao Clicar conheca nossa Missao, Visao valores E voltar" library="teste_resource">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//div[@class='linkar text-body-secondary'][contains(.,'Conheça nossa missão, visão e valores')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231013 21:26:40.720" level="INFO">Clicking element '//div[@class='linkar text-body-secondary'][contains(.,'Conheça nossa missão, visão e valores')]'.</msg>
-<status status="PASS" starttime="20231013 21:26:40.720" endtime="20231013 21:26:41.029"/>
+<msg timestamp="20231015 20:42:56.791" level="INFO">Clicking element '//div[@class='linkar text-body-secondary'][contains(.,'Conheça nossa missão, visão e valores')]'.</msg>
+<status status="PASS" starttime="20231015 20:42:56.789" endtime="20231015 20:42:57.024"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//h1[contains(.,'Quem Somos')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231013 21:26:41.029" endtime="20231013 21:26:41.071"/>
+<status status="PASS" starttime="20231015 20:42:57.024" endtime="20231015 20:42:57.084"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[@class='voltar'][contains(.,'Voltar')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231013 21:26:41.072" level="INFO">Clicking element '//button[@class='voltar'][contains(.,'Voltar')]'.</msg>
-<status status="PASS" starttime="20231013 21:26:41.071" endtime="20231013 21:26:41.229"/>
+<msg timestamp="20231015 20:42:57.084" level="INFO">Clicking element '//button[@class='voltar'][contains(.,'Voltar')]'.</msg>
+<status status="PASS" starttime="20231015 20:42:57.084" endtime="20231015 20:42:57.348"/>
 </kw>
-<status status="PASS" starttime="20231013 21:26:40.720" endtime="20231013 21:26:41.231"/>
+<status status="PASS" starttime="20231015 20:42:56.789" endtime="20231015 20:42:57.348"/>
 </kw>
 <kw name="Entao Clicar conheca Nossa Marca E voltar" library="teste_resource">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//div[@class='linkar text-body-secondary'][contains(.,'Conheça mais sobre a platarfoma')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231013 21:26:41.236" level="INFO">Clicking element '//div[@class='linkar text-body-secondary'][contains(.,'Conheça mais sobre a platarfoma')]'.</msg>
-<status status="PASS" starttime="20231013 21:26:41.232" endtime="20231013 21:26:41.380"/>
+<msg timestamp="20231015 20:42:57.362" level="INFO">Clicking element '//div[@class='linkar text-body-secondary'][contains(.,'Conheça mais sobre a platarfoma')]'.</msg>
+<status status="PASS" starttime="20231015 20:42:57.360" endtime="20231015 20:42:57.501"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//h1[contains(.,'Nossa Marca')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231013 21:26:41.380" endtime="20231013 21:26:41.414"/>
+<status status="PASS" starttime="20231015 20:42:57.501" endtime="20231015 20:42:57.523"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[@class='voltar'][contains(.,'Voltar')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231013 21:26:41.415" level="INFO">Clicking element '//button[@class='voltar'][contains(.,'Voltar')]'.</msg>
-<status status="PASS" starttime="20231013 21:26:41.414" endtime="20231013 21:26:41.486"/>
+<msg timestamp="20231015 20:42:57.523" level="INFO">Clicking element '//button[@class='voltar'][contains(.,'Voltar')]'.</msg>
+<status status="PASS" starttime="20231015 20:42:57.523" endtime="20231015 20:42:57.848"/>
 </kw>
-<status status="PASS" starttime="20231013 21:26:41.232" endtime="20231013 21:26:41.486"/>
+<status status="PASS" starttime="20231015 20:42:57.360" endtime="20231015 20:42:57.848"/>
 </kw>
 <kw name="Fechar o navegador" library="teste_resource" type="TEARDOWN">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20231013 21:26:42.159" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231013 21:26:41.486" endtime="20231013 21:26:42.160"/>
+<msg timestamp="20231015 20:42:58.857" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231015 20:42:57.848" endtime="20231015 20:42:58.857"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231013 21:26:42.160" endtime="20231013 21:26:44.478"/>
+<status status="PASS" starttime="20231015 20:42:58.857" endtime="20231015 20:43:02.231"/>
 </kw>
-<status status="PASS" starttime="20231013 21:26:41.486" endtime="20231013 21:26:44.479"/>
+<status status="PASS" starttime="20231015 20:42:57.848" endtime="20231015 20:43:02.232"/>
 </kw>
-<status status="PASS" starttime="20231013 21:26:33.758" endtime="20231013 21:26:44.479"/>
+<status status="PASS" starttime="20231015 20:42:36.831" endtime="20231015 20:43:02.235"/>
 </test>
 <test id="s1-t2" name="Caso 02 - Investir" line="17">
 <kw name="Abrir o navegador" library="teste_resource" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231013 21:26:44.485" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20231013 21:26:44.484" endtime="20231013 21:26:46.189"/>
+<msg timestamp="20231015 20:43:02.244" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20231015 20:43:02.243" endtime="20231015 20:43:05.767"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231013 21:26:46.190" endtime="20231013 21:26:46.334"/>
+<status status="PASS" starttime="20231015 20:43:05.767" endtime="20231015 20:43:06.076"/>
 </kw>
-<status status="PASS" starttime="20231013 21:26:44.483" endtime="20231013 21:26:46.334"/>
+<status status="PASS" starttime="20231015 20:43:02.240" endtime="20231015 20:43:06.077"/>
 </kw>
 <kw name="Dado que usuario esta na pagina de investimentos" library="teste_resource">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>url=file:///C:/Users/maria/OneDrive/%C3%81rea%20de%20Trabalho/Projeto-Integrador-UNIVESP/index7.html</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231013 21:26:46.335" level="INFO">Opening url 'file:///C:/Users/maria/OneDrive/%C3%81rea%20de%20Trabalho/Projeto-Integrador-UNIVESP/index7.html'</msg>
-<status status="PASS" starttime="20231013 21:26:46.335" endtime="20231013 21:26:47.120"/>
+<msg timestamp="20231015 20:43:06.105" level="INFO">Opening url 'file:///C:/Users/maria/OneDrive/%C3%81rea%20de%20Trabalho/Projeto-Integrador-UNIVESP/index7.html'</msg>
+<status status="PASS" starttime="20231015 20:43:06.103" endtime="20231015 20:43:06.873"/>
 </kw>
-<status status="PASS" starttime="20231013 21:26:46.335" endtime="20231013 21:26:47.121"/>
+<status status="PASS" starttime="20231015 20:43:06.101" endtime="20231015 20:43:06.873"/>
 </kw>
 <kw name="Entao preencher os valores e calcular" library="teste_resource">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[contains(@name,'Investimento Inicial')]</arg>
 <arg>1000</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231013 21:26:47.124" level="INFO">Typing text '1000' into text field '//input[contains(@name,'Investimento Inicial')]'.</msg>
-<status status="PASS" starttime="20231013 21:26:47.122" endtime="20231013 21:26:47.412"/>
+<msg timestamp="20231015 20:43:06.875" level="INFO">Typing text '1000' into text field '//input[contains(@name,'Investimento Inicial')]'.</msg>
+<status status="PASS" starttime="20231015 20:43:06.874" endtime="20231015 20:43:07.102"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[contains(@name,'Investimento Mensal(aporte)')]</arg>
 <arg>100</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231013 21:26:47.412" level="INFO">Typing text '100' into text field '//input[contains(@name,'Investimento Mensal(aporte)')]'.</msg>
-<status status="PASS" starttime="20231013 21:26:47.412" endtime="20231013 21:26:47.484"/>
+<msg timestamp="20231015 20:43:07.102" level="INFO">Typing text '100' into text field '//input[contains(@name,'Investimento Mensal(aporte)')]'.</msg>
+<status status="PASS" starttime="20231015 20:43:07.102" endtime="20231015 20:43:07.226"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[contains(@name,'Prazo(Meses)')]</arg>
 <arg>12</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231013 21:26:47.485" level="INFO">Typing text '12' into text field '//input[contains(@name,'Prazo(Meses)')]'.</msg>
-<status status="PASS" starttime="20231013 21:26:47.484" endtime="20231013 21:26:47.577"/>
+<msg timestamp="20231015 20:43:07.227" level="INFO">Typing text '12' into text field '//input[contains(@name,'Prazo(Meses)')]'.</msg>
+<status status="PASS" starttime="20231015 20:43:07.227" endtime="20231015 20:43:07.378"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[@onclick='calcularRendaFixa()'][contains(.,'Calcular REVER')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231013 21:26:47.578" level="INFO">Clicking element '//button[@onclick='calcularRendaFixa()'][contains(.,'Calcular REVER')]'.</msg>
-<status status="PASS" starttime="20231013 21:26:47.577" endtime="20231013 21:26:47.641"/>
+<msg timestamp="20231015 20:43:07.378" level="INFO">Clicking element '//button[@onclick='calcularRendaFixa()'][contains(.,'Calcular REVER')]'.</msg>
+<status status="PASS" starttime="20231015 20:43:07.378" endtime="20231015 20:43:07.470"/>
 </kw>
-<status status="PASS" starttime="20231013 21:26:47.121" endtime="20231013 21:26:47.641"/>
+<status status="PASS" starttime="20231015 20:43:06.874" endtime="20231015 20:43:07.470"/>
 </kw>
 <kw name="Fechar o navegador" library="teste_resource" type="TEARDOWN">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20231013 21:26:48.754" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231013 21:26:47.642" endtime="20231013 21:26:48.754"/>
+<msg timestamp="20231015 20:43:08.786" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231015 20:43:07.471" endtime="20231015 20:43:08.791"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231013 21:26:48.754" endtime="20231013 21:26:51.079"/>
+<status status="PASS" starttime="20231015 20:43:08.791" endtime="20231015 20:43:11.346"/>
 </kw>
-<status status="PASS" starttime="20231013 21:26:47.641" endtime="20231013 21:26:51.079"/>
+<status status="PASS" starttime="20231015 20:43:07.471" endtime="20231015 20:43:11.346"/>
 </kw>
-<status status="PASS" starttime="20231013 21:26:44.482" endtime="20231013 21:26:51.079"/>
+<status status="PASS" starttime="20231015 20:43:02.240" endtime="20231015 20:43:11.346"/>
 </test>
-<status status="PASS" starttime="20231013 21:26:33.388" endtime="20231013 21:26:51.610"/>
+<status status="PASS" starttime="20231015 20:42:32.995" endtime="20231015 20:43:11.350"/>
 </suite>
 <statistics>
 <total>
