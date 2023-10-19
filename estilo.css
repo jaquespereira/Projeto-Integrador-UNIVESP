@@ -215,3 +215,8 @@ h2 {
 .subtitulo {
     color: yellow;
 }
+
+.opaco {
+    color:white;
+    background-attachment: white;
+}
