@@ -207,6 +207,10 @@ h2 {
     color:black;
 }
 
+.referencia-nova:hover {
+    background-color: bisque
+}
+
 .cdb-102{
     color: whitesmoke;
 
@@ -225,3 +229,4 @@ h2 {
     margin-top: 200px;
     margin-left: -50px;
 }
+
