@@ -206,3 +206,42 @@ Certifique-se de substituir 'seu_usuario', 'sua_senha' e 'seu_banco_de_dados' pe
 
 
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora da Poupança</title>
+</head>
+<body>
+    <h1>Calculadora da Poupança</h1>
+    <p>Informe o valor inicial e o período de investimento:</p>
+    <label for="valorInicial">Valor Inicial:</label>
+    <input type="number" id="valorInicial" step="0.01" placeholder="Informe o valor inicial"><br><br>
+    <label for="periodoInvestimento">Período de Investimento (em meses):</label>
+    <input type="number" id="periodoInvestimento" placeholder="Informe o período de investimento"><br><br>
+    <button id="calcular">Calcular Rendimento</button>
+    <p id="resultado"></p>
+
+    <script>
+        document.getElementById("calcular").addEventListener("click", function () {
+            const valorInicial = parseFloat(document.getElementById("valorInicial").value);
+            const periodoInvestimento = parseInt(document.getElementById("periodoInvestimento").value);
+            const apiUrl = `https://api.bcb.gov.br/dados/serie/bcdata.sgs.11/dados?formato=json&dataInicial=01/01/${new Date().getFullYear()}&dataFinal=01/12/${new Date().getFullYear()}`;
+
+            fetch(apiUrl)
+                .then((response) => response.json())
+                .then((data) => {
+                    // Encontrar a taxa de rendimento da poupança no último mês disponível
+                    const ultimaTaxa = data[data.length - 1].valor / 100;
+
+                    // Calcular o rendimento da poupança
+                    const rendimento = valorInicial * Math.pow(1 + ultimaTaxa, periodoInvestimento / 12) - valorInicial;
+
+                    document.getElementById("resultado").textContent = `Seu rendimento estimado é de R$ ${rendimento.toFixed(2)}`;
+                })
+                .catch((error) => {
+                    console.error("Erro ao buscar a taxa de rendimento da poupança: " + error);
+                });
+        });
+    </script>
+</body>
+</html>
