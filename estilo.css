@@ -236,5 +236,12 @@ h2 {
 
 .calcular_rever {
     margin-top: 30px;
-    margin-left: -110px
+    margin-left: -110px;
+     
+}
+
+
+.botao_especifico {
+    margin-left: 4000000px ;
+    margin-bottom: 50px;
 }
