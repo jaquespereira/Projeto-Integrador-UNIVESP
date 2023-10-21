@@ -207,13 +207,8 @@ h2 {
     color:black;
 }
 
-.referencia-nova:hover {
-    background-color: bisque
-}
-
 .cdb-102{
     color: whitesmoke;
-
 }
 
 .subtitulo {
@@ -230,3 +225,16 @@ h2 {
     margin-left: -50px;
 }
 
+.direcao_do_investimento { 
+    text-decoration: none;
+    color:black;
+}
+
+.direcao_do_investimento:hover {
+    background-color: greenyellow
+}
+
+.calcular_rever {
+    margin-top: 30px;
+    margin-left: -110px
+}
