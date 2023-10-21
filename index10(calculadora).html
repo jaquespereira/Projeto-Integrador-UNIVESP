@@ -25,11 +25,11 @@
                 <br>
                 <br>
                     <label for="User">Investimento Mensal(aporte)</label><br>
-                    <input type="number" id="aporteMensal" name="aporteMensal" class="inseri"/>
+                    <input type="number" id="InvestimentoMensal" name="InvestimentoMensal" class="inseri"/>
                 <br>
                 <br>
                     <label for="User">Prazo (meses)</label><br>
-                    <input type="number" id="periodoInvestimento" name="periodoInvestimento" class="inseri"/>
+                    <input type="number" id="tempoDeInvestimento" name="tempoDeInvestimento" class="inseri"/>
             </div>
                 <div class="calcular_rever" id="calcular_rever"><button>Calcular</button></div>
                     <p id="resultado"></p>
@@ -67,28 +67,25 @@
     <script>
         document.getElementById("calcular_rever").addEventListener("click", function () {
             const valorInicial = parseFloat(document.getElementById("valorInicial").value);
-            const periodoInvestimento = parseInt(document.getElementById("periodoInvestimento").value);
-            const aporteMensal = parseFloat(document.getElementById("aporteMensal").value);
+            const tempoDeInvestimento = parseInt(document.getElementById("tempoDeInvestimento").value);
+            const InvestimentoMensal = parseFloat(document.getElementById("InvestimentoMensal").value);
             const apiUrl = `https://api.bcb.gov.br/dados/serie/bcdata.sgs.11/dados?formato=json&dataInicial=01/01/${new Date().getFullYear()}&dataFinal=01/12/${new Date().getFullYear()}`;
 
             fetch(apiUrl)
                 .then((response) => response.json())
                 .then((data) => {
-                    // Encontrar a taxa de rendimento da poupança no último mês disponível
                     const ultimaTaxa = data[data.length - 1].valor / 100;
 
-                    // _rever o rendimento da poupança
                     let total = valorInicial;
-                    for (let i = 1; i <= periodoInvestimento; i++) {
-                        total += aporteMensal;
+                    for (let i = 1; i <= tempoDeInvestimento; i++) {
+                        total += InvestimentoMensal;
                         total *= (1 + ultimaTaxa / 12);
                     }
 
-                    // Exibir o resultado no campo de input "User"
                     document.getElementById("User-poupanca").value = `R$ ${total.toFixed(2)}`;
                 })
                 .catch((error) => {
-                    console.error("Erro ao buscar a taxa de rendimento da poupança: " + error);
+                    console.error("Erro" + error);
                 });
         });
     </script>
