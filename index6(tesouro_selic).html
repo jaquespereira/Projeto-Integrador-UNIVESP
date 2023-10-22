@@ -105,8 +105,41 @@
         <div class="botao_especifico"></div><a href="index5(home_de_investimentos).html"><button class="voltar-index9">Voltar</button></div>
           <!-- <a href="index9.html"><button class="conhecer-mais-parte-dois-index9">Saiba_Mais</button></a> -->
       </div>
+    </body>
+
         
 
         <script scr = "main.js"></script>
-    </body>
+          <script>
+            const express = require('express');
+            const mysql = require('mysql');
+            const app = express();
+
+            const db = mysql.createConnection({
+              host: '3306',
+              user: 'root.',
+              password: 'sua_senha',
+              database: 'seu_banco_de_dados'
+            });
+
+            db.connect((err) => {
+              if (err) {
+                console.error('Erro ' + err);
+              }
+                );
+            
+                app.get('/calcularTesouroPrefixado/:valorInvestido/:taxa/:prazo', (req, res) => {
+              const valorInvestido = parseFloat(req.params.valorInvestido);
+              const taxa = parseFloat(req.params.taxa);
+              const prazo = parseInt(req.params.prazo);
+
+              const rendimento = valorInvestido * (1 + (taxa / 100) * (prazo / 12)) - valorInvestido;
+
+              res.json({ rendimento });
+            });
+
+            app.listen(3000, () => {
+              console.log('Servidor está ouvindo na porta 3000');
+            });
+          </script>
 </html>

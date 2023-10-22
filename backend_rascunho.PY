@@ -245,3 +245,10 @@ Certifique-se de substituir 'seu_usuario', 'sua_senha' e 'seu_banco_de_dados' pe
     </script>
 </body>
 </html>
+
+
+A construção da plataforma nos permitiu reforçar tanto a teoria como a prática de alguns elementos trabalhados no PI anterior, tais como HTML, CSS e o framework Bootstrap, o versionamento de código via GitHub. Além disso, pudemos nos aprofundar em alguns elementos que apenas tínhamos tido um contato mais inicial, porém que não eram o escopo central do último projeto como a parte de banco de dado ou o uso do Javascript.  
+
+Aprendemos e trabalhamos com novos conceitos e práticas relacionados ao desenvolvimento. Entendemos sobre o uso da nuvem na construção da plataforma, bem como trabalhar com APIs de forma dar novas possiblidades para o back-end, acessibilidade como dado fundamental de equidade, uso de testes como meio de garantia da qualidade no desenvolvimento do produto.  
+
+Procuramos trabalhar com boas práticas, a fim de que o código seja mais acessível para futuras refatorações ou mesmo para entendimento facilitado do código e como ele está estruturado. Acreditamos também que há possibilidades de melhoria e amadurecimento, deixando em aberto próximo projeto a possiblidade de implementar novas funcionalidades, fluxos a fim de procurar a melhoria contínua da mesma. 

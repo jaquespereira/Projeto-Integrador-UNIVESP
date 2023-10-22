@@ -12,6 +12,8 @@ Caso 01 - Navegar a pagina inicial
     Quando chegar na pagina o que voce encontra nessa plataforma, usuario explorara as paginas 
     Entao Clicar conheca nossa Missao, Visao valores E voltar 
     Entao Clicar conheca Nossa Marca E voltar 
+    Entao Clicar Conheça mais sobre os investimentos
+
 
 
 Caso 02 - Investir 

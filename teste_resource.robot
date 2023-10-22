@@ -45,11 +45,18 @@ Entao Clicar Conheça mais sobre os investimentos e simule aqui Marca
     Click Element                    //div[@class='linkar text-body-secondary'][contains(.,'Conheça mais sobre os investimentos e simule aqui!')]
     Sleep    5s
     Wait Until Element Is Visible    //h1[contains(.,'Conheça Mais')]
-    Sleep    10s
+    Sleep    s
+
+Entao Clicar Conheça mais sobre os investimentos
+    Click Element    //div[@class='linkar text-body-secondary'][contains(.,'Conheça mais sobre os investimentos e simule aqui!')]
+    Sleep    5s
+    Click Element    //th[@scope='row'][contains(.,'CDB (Certificado de Depósito Bancário)')]
+    Sleep    5s
+    
 
 
 Dado que usuario esta na pagina de investimentos 
-    Go To    url=file:///C:/Users/maria/OneDrive/%C3%81rea%20de%20Trabalho/Projeto-Integrador-UNIVESP/index7.html
+    Go To    url=file:///C:/Users/maria/OneDrive/%C3%81rea%20de%20Trabalho/Projeto-Integrador-UNIVESP/index10(calculadora).html
 
 Entao preencher os valores e calcular
     Input Text        //input[contains(@name,'Investimento Inicial')]           1000
