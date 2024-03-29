@@ -26,7 +26,7 @@ button {
  /* PAGINA_2  */
 
 body {
-    background-image: url(cor_azul.jpg);
+    background-image: url(transferir.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -244,4 +244,8 @@ h2 {
 .botao_especifico {
     margin-left: 4000000px ;
     margin-bottom: 50px;
+}
+
+.botao-novo-previdencia {
+    background-color: peru;
 }

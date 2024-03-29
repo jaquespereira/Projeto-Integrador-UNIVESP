@@ -14,7 +14,7 @@ Fechar o navegador
 
 
 Dado que usuario entrar na pagina inicial
-    Go To    url=file:///C:/Users/maria/OneDrive/%C3%81rea%20de%20Trabalho/Projeto-Integrador-UNIVESP/index1(pagina_inicial).html
+    Go To    url=file:///C:/Users/SAMSUNG/Desktop/Jaques/Projeto-Integrador-UNIVESP/index1(pagina_inicial).html 
     Wait Until Element Contains    //button[contains(.,'Vamos começar !')]    Vamos começar
 
 Entao clicar no botao Vamos começar 
@@ -56,12 +56,12 @@ Entao Clicar Conheça mais sobre os investimentos
 
 
 Dado que usuario esta na pagina de investimentos 
-    Go To    url=file:///C:/Users/maria/OneDrive/%C3%81rea%20de%20Trabalho/Projeto-Integrador-UNIVESP/index10(calculadora).html
-
+    Go To    url=file:///C:/Users/SAMSUNG/Desktop/Jaques/Projeto-Integrador-UNIVESP/index10(calculadora).html 
+    
 Entao preencher os valores e calcular
-    Input Text        //input[contains(@name,'Investimento Inicial')]           1000
-    Input Text        //input[contains(@name,'Investimento Mensal(aporte)')]    100
-    Input Text        //input[contains(@name,'Prazo(Meses)')]                   12
+    Input Text        //input[contains(@name,'valorInicial')]           1000
+    Input Text        //input[contains(@name,'InvestimentoMensal')]    100
+    Input Text        //input[contains(@name,'tempoDeInvestimento')]                   12
     Click Element     //button[@onclick='calcularRendaFixa()'][contains(.,'Calcular REVER')]
     
 
