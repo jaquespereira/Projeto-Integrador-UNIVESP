@@ -249,3 +249,11 @@ h2 {
 .botao-novo-previdencia {
     background-color: peru;
 }
+
+.flex-previdencia {
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size:20 px;
+    text-align: center;
+    background-color: aliceblue;
+}
