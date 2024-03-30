@@ -256,19 +256,27 @@ h2 {
 .flex-previdencia {
     margin-left: 60px;
     margin-right: 60px;
-    font-size:20 px;
+    font-size:19px;
     text-align: center;
     background-color: aliceblue;
 }
 
+.flex-previdencia:hover {
+    background-color: greenyellow;
+}
 
-.card {
+.buton-previdencia {
+    text-decoration:none ;
+    color: black ;
+}
+
+.class-a-mais {
     margin-left: 200px;
     margin-right: 250px;
     border-radius: 100px ;
 }
 
-.card-body {
+/*.card-body {
     border-radius: 100px;
 
 }
