@@ -1,16 +1,17 @@
 .body_inicial {
-    background-image: url(calc.jpg);
+    background-image: url(calculadora-de-investimentos.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 h1 {
-    color: yellow;
+    color:yellow;
     text-align: justify;
     margin-top: 50px;
     font-size: 70px;
     margin-left: 110px ;
 }
+
 
 p {
     font-size: 32px;
@@ -278,5 +279,19 @@ h2 {
 
 /*.card-body {
     border-radius: 100px;
+
+}
+
+
+
+.col {
+   
+
+*/
+
+.outra-col {
+    margin-right: 250px;
+    margin-left: 350px;
+    border-radius: 100px;  
 
 }
