@@ -13,6 +13,14 @@ h1 {
 }
 
 
+.teste {
+    color: green;
+    text-align: justify;
+    font-size: 70px;
+    margin-left: 10px ;
+    text-decoration: none;
+}
+
 p {
     font-size: 32px;
     margin-left:110px ;
