@@ -106,6 +106,13 @@ h2 {
     margin-top: 40px;
 }
 
+.formulario-pagina-extra {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 700px;
+    text-align: center;
+}
+
 .inseri {
     border-radius: 10px;
     font-size: 30px;
@@ -250,6 +257,11 @@ h2 {
     margin-top: 30px;
     margin-left: -110px;
      
+}
+
+#calcular_rever-pagina-extra {
+    margin-top: 30px;
+    margin-left: 700px;
 }
 
 

@@ -1,0 +1,42 @@
+url= http://localhost:5000/calcular_aposentadoria
+
+
+
+from flask import Flask, request, jsonify
+
+app = Flask(__name__)
+
+# Rota para calcular a idade de aposentadoria
+@app.route('/calcular_aposentadoria', methods=['POST'])
+def calcular_aposentadoria():
+    # Recebe os dados do corpo da requisição em formato JSON
+    dados = request.json
+
+    # Verifica se os dados necessários foram fornecidos
+    if 'idade' not in dados or 'sexo' not in dados:
+        return jsonify({'error': 'Dados incompletos'}), 400
+
+    # Extrai a idade e o sexo do usuário dos dados fornecidos
+    idade = int(dados['idade'])
+    sexo = dados['sexo'].lower()
+
+    # Calcula a idade de aposentadoria com base nas regras atuais do Brasil
+    if sexo == 'masculino':
+        idade_aposentadoria = 65
+    elif sexo == 'feminino':
+        idade_aposentadoria = 62
+    else:
+        return jsonify({'error': 'Sexo inválido'}), 400
+
+    # Verifica se o usuário já pode se aposentar
+    if idade >= idade_aposentadoria:
+        mensagem = "Você já pode se aposentar!"
+    else:
+        anos_restantes = idade_aposentadoria - idade
+        mensagem = f"Faltam {anos_restantes} anos para você se aposentar."
+
+    # Retorna o resultado do cálculo
+    return jsonify({'mensagem': mensagem})
+
+if __name__ == '__main__':
+    app.run(debug=True)
