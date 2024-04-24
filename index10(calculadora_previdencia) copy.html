@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Renda Fixa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+    <body>
+        <div class = "flex-container">
+            <h1>Calculadora de Investimentos</h1>
+
+            <div class="d-flex flex-row mb-3">
+                <div class="p-2">
+                    <div class="formulario">
+        
+                    <label for="User" class="cdb-102">INVESTIMENTO ESCOLHIDO  </label><br>
+                       <span class="cdb-102">Tesouro Renda Mais + 2045</span> 
+                <br>
+                    <label for="User">Investimento Inicial:</label><br>
+                    <input input type="number" id="valorInicial" name="valorInicial" class="inseri"/>
+                <br>
+                <br>
+                    <label for="User">Investimento Mensal(aporte):</label><br>
+                    <input type="number" id="InvestimentoMensal" name="InvestimentoMensal" class="inseri"/>
+                <br>
+                <br>
+                    <label for="User">Em quanto tempo você pretende resgatar:</label><br>
+                    <input type="number" id="tempoDeInvestimento" name="tempoDeInvestimento" class="inseri"/>
+            </div>
+                <div class="calcular_rever" id="calcular_rever"><button>Calcular</button></div>
+                    <p id="resultado"></p>
+                </div>
+                
+                <div class="p-2">
+                    <div class="formulario-pt2">
+                        <label for="User">Quanto você receberá por mês:</label><br>
+                        <input type="text" id="User" name="Name" class="inseri"/>
+                    <br>
+                    <br>
+                        <label for="User">Valor Adquirido no Investimento: </label>
+                        <input type="text" id="User" name="Name" class="inseriM"/>
+                    <br>
+                    <br>
+                        <label for="User-poupanca">Rendimento na Poupança</label>
+                        <input type="text" id="User-poupanca" name="Name" class="inseri"/>
+                    </div>
+                    <div class="info-adicional">
+                        <p class="info-adicional-1"> Os valores podem variar conforme o mercado</p>
+                        <p class="info-adicional-1">-Data da última atualização 14/05/2024</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="d-flex flex-row mb-3">
+            <a href="index5(home_de_investimentos_previdencia).html"><button class="voltar">Voltar</button></a>
+            <div class="p-2"><p class="rodape-pagina"> Precisa de mais informações para escolher a melhor opção de
+                renda fixa para você ? <br> Venha conhecer um pouco mais sobre os investimentos de Renda Fixa  </p></div>
+            <div class="p-2"><a href="index8.html"><button class="conhecer-mais bg-success-subtle text-emphasis-success">Feedback</button></a></div>
+        <script scr = "main.js"></script>
+
+    <script>
+        document.getElementById("calcular_rever").addEventListener("click", function () {
+            const valorInicial = parseFloat(document.getElementById("valorInicial").value);
+            const tempoDeInvestimento = parseInt(document.getElementById("tempoDeInvestimento").value);
+            const InvestimentoMensal = parseFloat(document.getElementById("InvestimentoMensal").value);
+            const apiUrl = `https://api.bcb.gov.br/dados/serie/bcdata.sgs.11/dados?formato=json&dataInicial=01/01/${new Date().getFullYear()}&dataFinal=01/12/${new Date().getFullYear()}`;
+
+            fetch(apiUrl)
+                .then((response) => response.json())
+                .then((data) => {
+                    const ultimaTaxa = data[data.length - 1].valor / 100;
+
+                    let total = valorInicial;
+                    for (let i = 1; i <= tempoDeInvestimento; i++) {
+                        total += InvestimentoMensal;
+                        total *= (1 + ultimaTaxa / 12);
+                    }
+
+                    document.getElementById("User-poupanca").value = `R$ ${total.toFixed(2)}`;
+                })
+                .catch((error) => {
+                    console.error("Erro" + error);
+                });
+        });
+    </script>
+</body>
+</html>
+
