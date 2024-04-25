@@ -118,6 +118,12 @@ h2 {
     font-size: 30px;
 }
 
+.inseri-resultado {
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: yellow;
+}
+
 .inseriM {
     border-radius: 10px;
     font-size: 30px;
@@ -224,6 +230,10 @@ h2 {
 .referencia-nova {
     text-decoration: none;
     color:black;
+}
+
+.cor-da-letra {
+    color: whitesmoke;
 }
 
 .cdb-102{

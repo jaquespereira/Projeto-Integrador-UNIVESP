@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Renda Fixa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+    <body>
+        <div class = "flex-container">
+            <h1>Conheça Mais</h1>
+            <br> <br>
+                <div class="tabela-geral" >
+                    <table class="table table-striped bg-body-secondary">
+                        <thead>
+                            <tr>
+                            <th scope="col">Produtos de renda fixa</th>
+                            <th scope="col">Tipos de título</th>
+                            <th scope="col">Imposto de Renda</th>
+                          <!--   <th scope="col">Emissor</th>  -->
+                            <th scope="col">Destino</th>
+                            <th scope="col">Garantia</th>
+                             <!-- <th scope="col">Tipos de Rentabilidade</th> -->
+                             <!-- <th scope="col">Indicador</th> -->
+                            <th scope="col">Tipo de Liquidez</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><a class="direcao_do_investimento" href="index6(tesouro_selic).html"> Tesouro Direto Selic</th> </a></th>
+                                    <td>Público</td>
+                                    <td>SIM</td>
+                                 <!--    <td>Governo Federal</td>  -->
+                                    <td>Financiar a dívida pública</td>
+                                    <td>Garantia do Governo Federal</td>
+                                  <!-- <td>Selic + valor pré-fixado (Híbrido)</td> --> 
+                                    <!--<td>SELIC</td>  -->
+                                    <td>Alta/Diária/Imediata</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"> <a class="direcao_do_investimento" href="indexExtra.html">   Tesouro Direto Prefixado </a></th>
+                                    <td>Público</td>
+                                    <td>SIM</td>
+                                  <!--   <td>Governo Federal</td>  -->
+                                    <td>Financiar a dívida pública</td>
+                                    <td>Garantia do Governo Federal</td>
+                                    <!--<td>Pré-fixado</td>-->
+                                    <!--<td>Taxa pré definida pelo Tesouro</td> -->
+                                    <td>Alta/Diária/Imediata</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"> <a class="direcao_do_investimento" href="indexExtra.html"> Tesouro Direto IPCA+ </a></th>
+                                    <td>Público</td>
+                                    <td>SIM</td>
+                                  <!--   <td>Governo Federal</td>  -->
+                                    <td>Financiar a dívida pública</td>
+                                    <td>Garantia do Governo Federal</td>
+                                    <!--<td>IPCA + valor pré-fixado</td>
+                                   <td>IPCA</td> -->
+                                    <td>Alta/Diária/Imediata</td>
+                            </tr>
+                            <tr>
+                                    <th scope="row">  <a class="direcao_do_investimento" href="index7(cdb).html"> CDB (Certificado de Depósito Bancário)  </a></th>
+                                    <td>Privado</td>
+                                    <td>SIM</td>
+                                  <!--   <td>Bancos</td>  -->
+                                    <td>Financiar as atividades do banco</td>
+                                    <td>Garantia do FGC* até R$250 mil por CPF por instituição</td>
+                                  <!--  <td>Pré-Fixado; Pós-fixado; Híbrido</td>
+                                  <td>CDI, IPCA</td> -->
+                                    <td>Depende do título (Diária ou no vencimento)</td> </a>
+                            </tr>
+                            <tr>
+                                <th scope="row"> <a class="direcao_do_investimento" href="index9(referencia_investimentos_demais).html"> LCI (Letra de Crédito Imobiliário)</a></th>
+                                    <td>Privado</td>
+                                    <td>ISENTO</td>  
+                                  <!--   <td>Instituições financeiras</td>  -->
+                                    <td>Financiar o setor imobiliário</td>
+                                    <td>Garantia do Fundo Garantidor de Crédito (FGC)*</td>
+                                  <!--  <td>Pré-Fixado; Pós-fixado; Híbrido</td>
+                                   <td>CDI, IPCA</td> -->
+                                    <td>Depende do título (Diária ou no vencimento) - Carência de 90 dias</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"> <a class="direcao_do_investimento" href="index8(lca).html">LCA (Letra de Crédito do Agronegócio)</a></th>
+                                    <td>Privado</td>
+                                    <td>ISENTO</td>
+                                  <!--   <td>Instituições financeiras</td>  -->
+                                    <td>Financiar o setor agrícola</td>
+                                    <td>Garantia do Fundo Garantidor de Crédito (FGC)*</td>
+                                 <!--   <td>Pré-Fixado; Pós-fixado; Híbrido</td>
+                                 < <td>CDI, IPCA</td> -->
+                                    <td>Depende do título (Diária ou no vencimento) - Carência de 90 dias</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"> <a class="direcao_do_investimento" href="index9(referencia_investimentos_demais).html"> Debêntures </a></th>
+                                    <td>Privado</td>
+                                    <td>ISENTO</td>
+                                  <!--   <td>Empresas públicas eprivadas</td>  -->
+                                    <td>Financiar as atividades da empresa</td>
+                                    <td>Sem garantia, mas pode ter preferência no caso de falência</td>
+                                  <!--  <td>Pré-Fixado; Pós-fixado; Híbrido</td>
+                                  <td>CDI, IPCA</td> -->
+                                    <td>Depende do título (Diária ou no vencimento) - Carência de 90 dias</td>
+                            </tr>
+                            <tr>
+                               <!-- <th scope="row"> <a class="direcao_do_investimento" href="index9(referencia_investimentos_demais).html"> Fundos de renda fixa</a></th>
+                                    <td>Privado</td>
+                                    <td>SIM</td>
+                                    #<td>Instituições financeiras</td>
+                                    <td>Diversificação em diferentes produtos de renda fixa</td>
+                                    <td>Não tem garantia do FGC</td>
+                                  <td>Diversificação em diferentes produtos de renda fixa</td>
+                                  <td>SELIC, IPCA, CDI e etc</td> 
+                                    <td>Depende do prazo de cotização e liquidação do fundo</td>-->
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                  <br><br><br>
+                  <a href="index2(o_que_voce_encontra).html"><button class="voltar">Voltar</button></a>
+                  <!-- <a href="index11.html"><button class="conhecer-mais-parte-dois">Feedback</button></a> -->
+                </div>
+               </a></div>
+        <script scr = "main.js"></script>
+    </body>
+</html>
