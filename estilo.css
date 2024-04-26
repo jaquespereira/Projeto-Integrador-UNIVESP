@@ -1,3 +1,47 @@
+.Maior {
+    flex-direction: row-reverse;
+}
+
+.Menor {
+    color:red;
+    background-color: blue;
+}
+
+.campo-investimento {
+    margin-left: 700px;
+    border-radius: 100%;
+    height: 500px;
+    background-color: yellow;
+}
+
+.objeto {
+}
+
+.palavras {
+    font-size: 40px;
+    margin-left: 100px;  
+    margin-top: 75px;  
+}
+
+.container {
+	max-width: 420px;
+	height: 300px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+	flex-wrap: wrap;
+}
+/* Flex Item */
+.item {
+	flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+
 .body_inicial {
     background-image: url(calculadora-de-investimentos.jpg);
     background-repeat: no-repeat;
