@@ -7,14 +7,20 @@
     background-color: blue;
 }
 
+
+
 .campo-investimento {
     margin-left: 700px;
     border-radius: 100%;
     height: 500px;
-    background-color: yellow;
+    background-color:rgb(219, 11, 219) ;
+    color: white;
 }
 
-.objeto {
+.avanco-volta {
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: aqua;
 }
 
 .palavras {
