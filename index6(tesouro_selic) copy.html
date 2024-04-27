@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Renda Fixa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+    <body>
+      <p class="plataforma-comparaçao">Investimentos</p>
+    <br><br>
+      <div class="row row-cols-1 row-cols-md-4 g-2 cartao-principal parte-inferior">
+        <div class="col">
+          <a class="referencia-nova" href="index7.html">  
+          <div class="card h-100 bg-danger-subtle text-emphasis-danger">
+            <div class="card-body bg-danger-subtle text-emphasis-danger">
+              <h5 class="card-title h-0 d-inline-block titulo-cartao"> 
+                Tesouro Prefixado 2026
+             <br><br>
+              -Aplicação minima: 31,79 <br> 
+              -Vencimento: 1 dia util <br> 
+              -Liquidez: 11,02% a.a </p>
+              </div></h5>
+              <p class="card-title h-0 texto-cartao">
+              </a>
+          </div>
+        </div>
+
+        <div class="col">         
+          <a class="referencia-nova" href="index7.html">  
+          <div class="card h-100">
+            <div class="card-body ">
+              <h5 class="card-title">Tesouro Prefixado 2029<br> <br> 
+                -Aplicação minima: 100,00 <br> 
+                -Vencimento: 1 dia util <br>
+                -Liquidez: 11,64% a.a </p> </h5>
+              <p class="card-text text-white text-opacity-25 especifo"></p>
+            </div>  
+          </a>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 bg-danger-subtle text-emphasis-danger">
+            <div class="card-body bg-danger-subtle text-emphasis-danger">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text text-white text-opacity-25 especifo"> </p>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+        <div class="row row-cols-1 row-cols-md-4 g-2 cartao-principal parte-two">
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title h-25 d-inline-block"></h5>
+              <p class="card-text text-white text-opacity-25 especifo"></p>
+            </div>
+           
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 bg-danger-subtle text-emphasis-danger ">
+            <div class="card-body bg-danger-subtle text-emphasis-danger">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text text-white text-opacity-25 especifo">Fixa Fixa Fixa Fica Fixa  Fixa Fixa</p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 bg-danger-subtle text-emphasis-danger">
+            <div class="card-body bg-danger-subtle text-emphasis-danger">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+        </div>
+        </div>
+        
+        <br><br>
+      </div>
+        <br>
+        <div class="botao_especifico"></div><a href="index5(home_de_investimentos).html"><button class="voltar-index9">Voltar</button></div>
+          <!-- <a href="index9.html"><button class="conhecer-mais-parte-dois-index9">Saiba_Mais</button></a> -->
+      </div>
+    </body>
+
+        
+
+        <script scr = "main.js"></script>
+          <script>
+            const express = require('express');
+            const mysql = require('mysql');
+            const app = express();
+
+            const db = mysql.createConnection({
+              host: '3306',
+              user: 'root.',
+              password: 'sua_senha',
+              database: 'seu_banco_de_dados'
+            });
+
+            db.connect((err) => {
+              if (err) {
+                console.error('Erro ' + err);
+              }
+                );
+            
+                app.get('/calcularTesouroPrefixado/:valorInvestido/:taxa/:prazo', (req, res) => {
+              const valorInvestido = parseFloat(req.params.valorInvestido);
+              const taxa = parseFloat(req.params.taxa);
+              const prazo = parseInt(req.params.prazo);
+
+              const rendimento = valorInvestido * (1 + (taxa / 100) * (prazo / 12)) - valorInvestido;
+
+              res.json({ rendimento });
+            });
+
+            app.listen(3000, () => {
+              console.log('Servidor está ouvindo na porta 3000');
+            });
+          </script>
+</html>
