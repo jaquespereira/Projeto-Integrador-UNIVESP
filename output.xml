@@ -1,242 +1,294 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-04T22:35:16.535390" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-04-28T21:42:28.648471" rpa="false" schemaversion="5">
 <suite id="s1" name="Teste Casos" source="C:\Users\SAMSUNG\Desktop\Jaques\Projeto-Integrador-UNIVESP\teste casos.robot">
 <test id="s1-t1" name="Caso 01 - Navegar a pagina inicial" line="9">
 <kw name="Abrir o navegador" owner="teste_resource" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-04T22:35:16.869559" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-04-28T21:42:29.039453" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-04T22:35:16.869559" elapsed="2.520451"/>
+<status status="PASS" start="2024-04-28T21:42:29.039453" elapsed="2.521487"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-02-04T22:35:19.390010" elapsed="0.127039"/>
+<status status="PASS" start="2024-04-28T21:42:31.560940" elapsed="0.054777"/>
 </kw>
-<status status="PASS" start="2024-02-04T22:35:16.869559" elapsed="2.647490"/>
+<status status="PASS" start="2024-04-28T21:42:29.038382" elapsed="2.577335"/>
 </kw>
 <kw name="Dado que usuario entrar na pagina inicial" owner="teste_resource">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-02-04T22:35:19.517049" level="INFO">Opening url 'file:///C:/Users/SAMSUNG/Desktop/Jaques/Projeto-Integrador-UNIVESP/index1(pagina_inicial).html'</msg>
+<msg time="2024-04-28T21:42:31.617936" level="INFO">Opening url 'file:///C:/Users/SAMSUNG/Desktop/Jaques/Projeto-Integrador-UNIVESP/index1(pagina_inicial).html'</msg>
 <arg>url=file:///C:/Users/SAMSUNG/Desktop/Jaques/Projeto-Integrador-UNIVESP/index1(pagina_inicial).html</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-02-04T22:35:19.517049" elapsed="0.381798"/>
+<status status="PASS" start="2024-04-28T21:42:31.615717" elapsed="0.625057"/>
 </kw>
 <kw name="Wait Until Element Contains" owner="SeleniumLibrary">
 <arg>//button[contains(.,'Vamos começar !')]</arg>
 <arg>Vamos começar</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" start="2024-02-04T22:35:19.898847" elapsed="0.064534"/>
+<status status="PASS" start="2024-04-28T21:42:32.240991" elapsed="0.037324"/>
 </kw>
-<status status="PASS" start="2024-02-04T22:35:19.517049" elapsed="0.446332"/>
+<status status="PASS" start="2024-04-28T21:42:31.615717" elapsed="0.662598"/>
 </kw>
 <kw name="Entao clicar no botao Vamos começar" owner="teste_resource">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-04T22:35:19.969328" level="INFO">Clicking element '//button[contains(.,'Vamos começar !')]'.</msg>
+<msg time="2024-04-28T21:42:32.280205" level="INFO">Clicking element '//button[contains(.,'Vamos começar !')]'.</msg>
 <arg>//button[contains(.,'Vamos começar !')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-04T22:35:19.963381" elapsed="0.175665"/>
+<status status="PASS" start="2024-04-28T21:42:32.279319" elapsed="0.533088"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-04T22:35:25.139147" level="INFO">Slept 5 seconds.</msg>
+<msg time="2024-04-28T21:42:37.813951" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-04T22:35:20.139046" elapsed="5.000101"/>
+<status status="PASS" start="2024-04-28T21:42:32.812407" elapsed="5.001544"/>
 </kw>
-<status status="PASS" start="2024-02-04T22:35:19.963381" elapsed="5.175766"/>
+<status status="PASS" start="2024-04-28T21:42:32.278315" elapsed="5.535636"/>
 </kw>
 <kw name="Quando chegar na pagina o que voce encontra nessa plataforma, usuario explorara as paginas" owner="teste_resource">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//p[@class='plataforma'][contains(.,'O que você encontra nessa plataforma')]</arg>
+<arg>locator=//a[contains(.,'Conheça mais sobre a platarfoma')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-04T22:35:25.140222" elapsed="0.056155"/>
-</kw>
-<status status="PASS" start="2024-02-04T22:35:25.140222" elapsed="0.056155"/>
-</kw>
-<kw name="Entao Clicar conheca nossa Missao, Visao valores E voltar" owner="teste_resource">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-04T22:35:25.198370" level="INFO">Clicking element '//div[@class='linkar text-body-secondary'][contains(.,'Conheça nossa missão, visão e valores')]'.</msg>
-<arg>//div[@class='linkar text-body-secondary'][contains(.,'Conheça nossa missão, visão e valores')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-04T22:35:25.196377" elapsed="0.180866"/>
+<status status="PASS" start="2024-04-28T21:42:37.813951" elapsed="0.028614"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-04T22:35:30.377574" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
+<msg time="2024-04-28T21:42:40.842927" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-04T22:35:25.377243" elapsed="5.000838"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//h1[contains(.,'Quem Somos')]</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-04T22:35:30.378081" elapsed="0.098538"/>
+<status status="PASS" start="2024-04-28T21:42:37.842565" elapsed="3.000362"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-04T22:35:30.476619" level="INFO">Clicking element '//button[@class='voltar'][contains(.,'Voltar')]'.</msg>
-<arg>//button[@class='voltar'][contains(.,'Voltar')]</arg>
+<msg time="2024-04-28T21:42:40.842927" level="INFO">Clicking element '//a[contains(.,'Conheça mais sobre a platarfoma')]'.</msg>
+<arg>locator=//a[contains(.,'Conheça mais sobre a platarfoma')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-04T22:35:30.476619" elapsed="0.317643"/>
+<status status="PASS" start="2024-04-28T21:42:40.842927" elapsed="0.105226"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>locator=//button[@class='voltar'][contains(.,'Voltar')]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-04-28T21:42:40.949391" elapsed="0.306198"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-04T22:35:35.797607" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
+<msg time="2024-04-28T21:42:44.257316" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-04T22:35:30.796126" elapsed="5.001481"/>
-</kw>
-<status status="PASS" start="2024-02-04T22:35:25.196377" elapsed="10.601230"/>
-</kw>
-<kw name="Entao Clicar conheca Nossa Marca E voltar" owner="teste_resource">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-04T22:35:35.797607" level="INFO">Clicking element '//div[@class='linkar text-body-secondary'][contains(.,'Conheça mais sobre a platarfoma')]'.</msg>
-<arg>//div[@class='linkar text-body-secondary'][contains(.,'Conheça mais sobre a platarfoma')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-04T22:35:35.797607" elapsed="0.365006"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-04T22:35:41.164835" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-04T22:35:36.162613" elapsed="5.002222"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//h1[contains(.,'Nossa Marca')]</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-04T22:35:41.166442" elapsed="0.043792"/>
+<status status="PASS" start="2024-04-28T21:42:41.256866" elapsed="3.000450"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-04T22:35:41.210234" level="INFO">Clicking element '//button[@class='voltar'][contains(.,'Voltar')]'.</msg>
-<arg>//button[@class='voltar'][contains(.,'Voltar')]</arg>
+<msg time="2024-04-28T21:42:44.257316" level="INFO">Clicking element '//button[@class='voltar'][contains(.,'Voltar')]'.</msg>
+<arg>locator=//button[@class='voltar'][contains(.,'Voltar')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-04T22:35:41.210234" elapsed="0.142686"/>
+<status status="PASS" start="2024-04-28T21:42:44.257316" elapsed="0.091987"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-04T22:35:46.356345" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-04T22:35:41.352920" elapsed="5.003425"/>
+<status status="PASS" start="2024-04-28T21:42:37.813951" elapsed="6.536374"/>
 </kw>
-<status status="PASS" start="2024-02-04T22:35:35.797607" elapsed="10.558738"/>
-</kw>
-<kw name="Entao Clicar Conheça mais sobre os investimentos" owner="teste_resource">
+<kw name="Entao Clicar no botao conhecer investimentos" owner="teste_resource">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-04T22:35:46.361554" level="INFO">Clicking element '//div[@class='linkar text-body-secondary'][contains(.,'Conheça mais sobre os investimentos e simule aqui!')]'.</msg>
-<arg>//div[@class='linkar text-body-secondary'][contains(.,'Conheça mais sobre os investimentos e simule aqui!')]</arg>
+<msg time="2024-04-28T21:42:44.357878" level="INFO">Clicking element '//div[@class='linkar text-body-secondary'][contains(.,'Sobre Investimentos')]'.</msg>
+<arg>//div[@class='linkar text-body-secondary'][contains(.,'Sobre Investimentos')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-04T22:35:46.356345" elapsed="0.410900"/>
+<status status="PASS" start="2024-04-28T21:42:44.356880" elapsed="0.116529"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-04T22:35:51.772437" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
+<msg time="2024-04-28T21:42:47.474052" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-04T22:35:46.772034" elapsed="5.000403"/>
+<status status="PASS" start="2024-04-28T21:42:44.473409" elapsed="3.000643"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>locator=//button[@class='voltar'][contains(.,'Voltar')]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-04-28T21:42:47.474052" elapsed="0.305041"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-28T21:42:50.779878" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-28T21:42:47.779331" elapsed="3.000547"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-04T22:35:51.772437" level="INFO">Clicking element '//th[@scope='row'][contains(.,'CDB (Certificado de Depósito Bancário)')]'.</msg>
-<arg>//th[@scope='row'][contains(.,'CDB (Certificado de Depósito Bancário)')]</arg>
+<msg time="2024-04-28T21:42:50.779878" level="INFO">Clicking element '//button[@class='voltar'][contains(.,'Voltar')]'.</msg>
+<arg>locator=//button[@class='voltar'][contains(.,'Voltar')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-04T22:35:51.772437" elapsed="0.168428"/>
+<status status="PASS" start="2024-04-28T21:42:50.779878" elapsed="0.138592"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-04T22:35:56.940959" level="INFO">Slept 5 seconds.</msg>
+<msg time="2024-04-28T21:42:55.923742" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-04T22:35:51.940865" elapsed="5.000094"/>
+<status status="PASS" start="2024-04-28T21:42:50.923189" elapsed="5.000553"/>
 </kw>
-<status status="PASS" start="2024-02-04T22:35:46.356345" elapsed="10.584614"/>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>//div[@class='linkar text-body-secondary'][contains(.,'Conheça mais sobre os investimentos previdenciarios !')]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-04-28T21:42:55.923742" elapsed="0.290780"/>
+</kw>
+<status status="PASS" start="2024-04-28T21:42:44.355892" elapsed="11.858630"/>
+</kw>
+<kw name="Entao Clicar Calculadora" owner="teste_resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-28T21:42:56.215266" level="INFO">Clicking element '//div[@class='linkar text-body-secondary'][contains(.,'Conheça mais sobre os investimentos previdenciarios !')]'.</msg>
+<arg>//div[@class='linkar text-body-secondary'][contains(.,'Conheça mais sobre os investimentos previdenciarios !')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T21:42:56.215266" elapsed="0.078798"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-28T21:43:01.294429" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-28T21:42:56.294064" elapsed="5.000365"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-28T21:43:01.295532" level="INFO">Clicking element '//a[@class='buton-previdencia'][contains(.,'TESOURO RENDA MAIS')]'.</msg>
+<arg>//a[@class='buton-previdencia'][contains(.,'TESOURO RENDA MAIS')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T21:43:01.294981" elapsed="0.124456"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-28T21:43:04.422564" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-28T21:43:01.420508" elapsed="3.002056"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>//button[@class='voltar'][contains(.,'Ir para o próximo investimento ---&gt;')]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-04-28T21:43:04.422564" elapsed="0.329383"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-28T21:43:04.753005" level="INFO">Clicking element '//button[@class='voltar'][contains(.,'Ir para o próximo investimento ---&gt;')]'.</msg>
+<arg>//button[@class='voltar'][contains(.,'Ir para o próximo investimento ---&gt;')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T21:43:04.753005" elapsed="0.073595"/>
+</kw>
+<status status="PASS" start="2024-04-28T21:42:56.215266" elapsed="8.613346"/>
 </kw>
 <kw name="Fechar o navegador" owner="teste_resource" type="TEARDOWN">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2024-02-04T22:35:57.832498" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-51.png"&gt;&lt;img src="selenium-screenshot-51.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-28T21:43:05.040479" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-86.png"&gt;&lt;img src="selenium-screenshot-86.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2024-02-04T22:35:56.943376" elapsed="0.889122"/>
+<status status="PASS" start="2024-04-28T21:43:04.829119" elapsed="0.211360"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-02-04T22:35:57.832498" elapsed="2.324788"/>
+<status status="PASS" start="2024-04-28T21:43:05.041710" elapsed="2.449021"/>
 </kw>
-<status status="PASS" start="2024-02-04T22:35:56.941965" elapsed="3.215321"/>
+<status status="PASS" start="2024-04-28T21:43:04.829119" elapsed="2.663211"/>
 </kw>
-<status status="PASS" start="2024-02-04T22:35:16.858492" elapsed="43.298794"/>
+<status status="PASS" start="2024-04-28T21:42:29.031967" elapsed="38.460903"/>
 </test>
-<test id="s1-t2" name="Caso 02 - Investir" line="19">
+<test id="s1-t2" name="Caso 02 - Investir" line="16">
 <kw name="Abrir o navegador" owner="teste_resource" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-04T22:36:00.174879" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-04-28T21:43:07.492870" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-04T22:36:00.172916" elapsed="3.706009"/>
+<status status="PASS" start="2024-04-28T21:43:07.492870" elapsed="1.766415"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-02-04T22:36:03.878925" elapsed="0.145802"/>
+<status status="PASS" start="2024-04-28T21:43:09.259285" elapsed="0.111647"/>
 </kw>
-<status status="PASS" start="2024-02-04T22:36:00.172916" elapsed="3.851811"/>
+<status status="PASS" start="2024-04-28T21:43:07.492870" elapsed="1.880064"/>
 </kw>
 <kw name="Dado que usuario esta na pagina de investimentos" owner="teste_resource">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-02-04T22:36:04.025840" level="INFO">Opening url 'file:///C:/Users/SAMSUNG/Desktop/Jaques/Projeto-Integrador-UNIVESP/index10(calculadora).html'</msg>
-<arg>url=file:///C:/Users/SAMSUNG/Desktop/Jaques/Projeto-Integrador-UNIVESP/index10(calculadora).html</arg>
+<msg time="2024-04-28T21:43:09.376897" level="INFO">Opening url 'file:///C:/Users/SAMSUNG/Desktop/Jaques/Projeto-Integrador-UNIVESP/index10(calculadora_renda_fixa).html'</msg>
+<arg>url=file:///C:/Users/SAMSUNG/Desktop/Jaques/Projeto-Integrador-UNIVESP/index10(calculadora_renda_fixa).html</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-02-04T22:36:04.025840" elapsed="0.761312"/>
+<status status="PASS" start="2024-04-28T21:43:09.376897" elapsed="0.492602"/>
 </kw>
-<status status="PASS" start="2024-02-04T22:36:04.025840" elapsed="0.763134"/>
+<status status="PASS" start="2024-04-28T21:43:09.374904" elapsed="0.495598"/>
 </kw>
 <kw name="Entao preencher os valores e calcular" owner="teste_resource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-04T22:36:04.790494" level="INFO">Typing text '1000' into text field '//input[contains(@name,'valorInicial')]'.</msg>
+<msg time="2024-04-28T21:43:09.871498" level="INFO">Typing text '1000' into text field '//input[contains(@name,'valorInicial')]'.</msg>
 <arg>//input[contains(@name,'valorInicial')]</arg>
 <arg>1000</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-04T22:36:04.790494" elapsed="0.183825"/>
+<status status="PASS" start="2024-04-28T21:43:09.871498" elapsed="0.135638"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-04T22:36:04.974319" level="INFO">Typing text '100' into text field '//input[contains(@name,'InvestimentoMensal')]'.</msg>
+<msg time="2024-04-28T21:43:10.007136" level="INFO">Typing text '100' into text field '//input[contains(@name,'InvestimentoMensal')]'.</msg>
 <arg>//input[contains(@name,'InvestimentoMensal')]</arg>
 <arg>100</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-04T22:36:04.974319" elapsed="0.113566"/>
+<status status="PASS" start="2024-04-28T21:43:10.007136" elapsed="0.124528"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-04T22:36:05.087885" level="INFO">Typing text '12' into text field '//input[contains(@name,'tempoDeInvestimento')]'.</msg>
+<msg time="2024-04-28T21:43:10.131664" level="INFO">Typing text '12' into text field '//input[contains(@name,'tempoDeInvestimento')]'.</msg>
 <arg>//input[contains(@name,'tempoDeInvestimento')]</arg>
 <arg>12</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-04T22:36:05.087885" elapsed="0.084002"/>
+<status status="PASS" start="2024-04-28T21:43:10.131664" elapsed="0.069254"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-04T22:36:05.174061" level="INFO">Clicking element '//button[@onclick='calcularRendaFixa()'][contains(.,'Calcular REVER')]'.</msg>
-<msg time="2024-02-04T22:36:06.133107" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-52.png"&gt;&lt;img src="selenium-screenshot-52.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-02-04T22:36:06.133107" level="FAIL">Element with locator '//button[@onclick='calcularRendaFixa()'][contains(.,'Calcular REVER')]' not found.</msg>
-<arg>//button[@onclick='calcularRendaFixa()'][contains(.,'Calcular REVER')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-02-04T22:36:05.171887" elapsed="0.977775">Element with locator '//button[@onclick='calcularRendaFixa()'][contains(.,'Calcular REVER')]' not found.</status>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>locator=//button[contains(.,'Calcular')]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-04-28T21:43:10.200918" elapsed="0.282703"/>
 </kw>
-<status status="FAIL" start="2024-02-04T22:36:04.788974" elapsed="1.360688">Element with locator '//button[@onclick='calcularRendaFixa()'][contains(.,'Calcular REVER')]' not found.</status>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-28T21:43:14.484887" level="INFO">Slept 4 seconds.</msg>
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-28T21:43:10.484642" elapsed="4.000245"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-04-28T21:43:14.485890" level="INFO">Opening url 'file:///C:/Users/SAMSUNG/Desktop/Jaques/Projeto-Integrador-UNIVESP/index10(calculadora_renda_fixa)2.html'</msg>
+<arg>url=file:///C:/Users/SAMSUNG/Desktop/Jaques/Projeto-Integrador-UNIVESP/index10(calculadora_renda_fixa)2.html</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-04-28T21:43:14.484887" elapsed="0.066507"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-28T21:43:18.552476" level="INFO">Slept 4 seconds.</msg>
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-28T21:43:14.551394" elapsed="4.001082"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>//button[@class='voltar'][contains(.,'Voltar')]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-04-28T21:43:18.552476" elapsed="0.311390"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-28T21:43:18.864880" level="INFO">Typing text '100' into text field '//input[contains(@type,'number')]'.</msg>
+<arg>//input[contains(@type,'number')]</arg>
+<arg>100</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T21:43:18.864880" elapsed="0.093919"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-28T21:43:22.959278" level="INFO">Slept 4 seconds.</msg>
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-28T21:43:18.958799" elapsed="4.000479"/>
+</kw>
+<status status="PASS" start="2024-04-28T21:43:09.870502" elapsed="13.088776"/>
 </kw>
 <kw name="Fechar o navegador" owner="teste_resource" type="TEARDOWN">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2024-02-04T22:36:07.386987" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-53.png"&gt;&lt;img src="selenium-screenshot-53.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-28T21:43:23.155050" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-87.png"&gt;&lt;img src="selenium-screenshot-87.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2024-02-04T22:36:06.149662" elapsed="1.237325"/>
+<status status="PASS" start="2024-04-28T21:43:22.959278" elapsed="0.195772"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-02-04T22:36:07.388009" elapsed="2.241981"/>
+<status status="PASS" start="2024-04-28T21:43:23.155050" elapsed="2.555265"/>
 </kw>
-<status status="PASS" start="2024-02-04T22:36:06.149662" elapsed="3.481622"/>
+<status status="PASS" start="2024-04-28T21:43:22.959278" elapsed="2.752745"/>
 </kw>
-<status status="FAIL" start="2024-02-04T22:36:00.157286" elapsed="9.473998">Element with locator '//button[@onclick='calcularRendaFixa()'][contains(.,'Calcular REVER')]' not found.</status>
+<status status="PASS" start="2024-04-28T21:43:07.492870" elapsed="18.219153"/>
 </test>
-<status status="FAIL" start="2024-02-04T22:35:16.545348" elapsed="53.085936"/>
+<status status="PASS" start="2024-04-28T21:42:28.651002" elapsed="57.061021"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="1" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="1" skip="0" id="s1" name="Teste Casos">Teste Casos</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Teste Casos">Teste Casos</stat>
 </suite>
 </statistics>
 <errors>
